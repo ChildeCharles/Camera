@@ -21,6 +21,8 @@ class Application(tk.Frame):
         self.bind("<Control-d>", self.scene.rotate_handler)
         self.bind("<Control-Up>", self.scene.rotate_handler)
         self.bind("<Control-Down>", self.scene.rotate_handler)
+        self.bind("<Control-e>", self.scene.rotate_handler)
+        self.bind("<Control-q>", self.scene.rotate_handler)
 
         self.bind("<plus>", self.scene.zoom_handler)
         self.bind("<minus>", self.scene.zoom_handler)

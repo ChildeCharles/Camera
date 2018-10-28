@@ -68,6 +68,10 @@ class Scene(object):
             self.rotate(-self.rotate_step, Axis.Z)
         elif source == "Down":
             self.rotate(self.rotate_step, Axis.Z)
+        elif source == "e":
+            self.rotate(-self.rotate_step, Axis.Z)
+        elif source == "q":
+            self.rotate(self.rotate_step, Axis.Z)
         else:
             print('"Ctrl + {0}" pressed but it isn\'t bound to anything'.format(source))
         self.draw()
